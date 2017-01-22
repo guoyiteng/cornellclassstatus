@@ -1,8 +1,8 @@
 {
 	"sender": {
-		"email_addr": "example@qq.com",
+		"email_addr": "example@example.com",
 		"password": "password",
-		"smtp_server": "smtp.qq.com",
+		"smtp_server": "smtp.example.com",
 		"smtp_port": "465"
 	},
 	"receiver": {

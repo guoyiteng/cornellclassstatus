@@ -23,13 +23,13 @@ Recommend using linux server
 ```Json
 {
 	"sender": {
-		"email_addr": "example@example.com", // sender's email address
-		"password": "password", // sender's email password
-		"smtp_server": "smtp.example.com", // smtp server of sender's email
-		"smtp_port": "465" // smtp port of sender's email, please use ssl connection
+		"email_addr": "example@example.com", 
+		"password": "password", 
+		"smtp_server": "smtp.example.com", 
+		"smtp_port": "465, Please use SSL Connection"
 	},
 	"receiver": {
-		"email_addr": "guoyiteng@gmail.com" // reciever's email address
+		"email_addr": "example@gmail.com" // reciever's email address
 	}
 }
 ```
