@@ -29,7 +29,7 @@ Recommend using linux server
 		"smtp_port": "465, Please use SSL Connection"
 	},
 	"receiver": {
-		"email_addr": "example@gmail.com" // reciever's email address
+		"email_addr": "example@gmail.com"
 	}
 }
 ```
