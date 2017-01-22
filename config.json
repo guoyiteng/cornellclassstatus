@@ -1,0 +1,11 @@
+{
+	"sender": {
+		"email_addr": "example@qq.com",
+		"password": "password",
+		"smtp_server": "smtp.qq.com",
+		"smtp_port": "465"
+	},
+	"receiver": {
+		"email_addr": "example@gmail.com"
+	}
+}

@@ -87,3 +87,8 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# test
+config2.json
+a.html
+nohup.out
