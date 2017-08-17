@@ -8,7 +8,7 @@ import sys
 
 def checkStatus(subject, number, section):
     check = functools.partial(checkStatus, subject = subject, number = number, section = section)
-    url = "https://classes.cornell.edu/browse/roster/SP17/class/%s/%s" % (subject, number)
+    url = "https://classes.cornell.edu/browse/roster/FA17/class/%s/%s" % (subject, number)
     html = getHTML(url)
     resultDict = parseHTML(html)
     if resultDict.get("Class Section " + section) == "open-status-open":

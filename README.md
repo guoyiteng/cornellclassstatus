@@ -36,7 +36,7 @@ python Main.py CS 3410 LEC 001
 python Main.py CS 2110 DIS 202
 
 Using nohup command on linux server
-nohup python Main.py CS 3410 LEC 001
+nohup python Main.py CS 3410 LEC 001 &
 
 Please use kill -2 to kill the process in order to get a full log
 ```
