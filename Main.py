@@ -16,7 +16,7 @@ def checkStatus(subject, number, section, configfile):
         print("Ding Ding Ding")
     else: 
         print(str(datetime.now()) + ": Not available")
-        Timer(3,check).start()
+        Timer(30,check).start()
 
 def main():
     args = sys.argv
