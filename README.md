@@ -32,8 +32,8 @@ Recommend using linux server
 
 - Run the script
 ```
-python Main.py CS 3410 LEC 001
-python Main.py CS 2110 DIS 202
+python Main.py CS 3410 LEC 001 config.json
+python Main.py CS 2110 DIS 202 config.json
 
 Using nohup command on linux server
 nohup python Main.py CS 3410 LEC 001 &

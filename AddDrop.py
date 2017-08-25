@@ -28,7 +28,7 @@ def parseHTML(html):
 
 def main():
 	print("start")
-	url = "https://classes.cornell.edu/browse/roster/SP17/class/AAS/1100"
+	url = "https://classes.cornell.edu/browse/roster/FA17/class/CS/4820"
 	html = getHTML(url)
 	print(parseHTML(html))
 	return 0

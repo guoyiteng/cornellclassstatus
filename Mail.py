@@ -17,9 +17,9 @@ def constructMsg(content, from_addr, password, to_addr, smtp_server):
 	msg["Subject"] = Header("%s status" % content, "utf-8").encode()
 	return msg
 
-def sendEmail(content):
+def sendEmail(configfile, content):
 	data = {}
-	with open("config2.json") as f:
+	with open(configfile) as f:
 		data = json.load(f)
 	from_addr = data["sender"]["email_addr"]
 	password = data["sender"]["password"]
@@ -36,7 +36,7 @@ def sendEmail(content):
 
 def main():
 	data = {}
-	with open("config.json") as f:
+	with open("config2.json") as f:
 		data = json.load(f)
 	sendEmail("CS 3410 is available right now")
 
