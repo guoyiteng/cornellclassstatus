@@ -1,4 +1,4 @@
-# Cornell Class Ctatus
+# Cornell Class Status
 
 A python script to check the availability of class in Cornell from [Class Roster](https://classes.cornell.edu)
 
@@ -36,7 +36,7 @@ python Main.py CS 3410 LEC 001 config.json
 python Main.py CS 2110 DIS 202 config.json
 
 Using nohup command on linux server
-nohup python Main.py CS 3410 LEC 001 &
+nohup python -u Main.py CS 3410 LEC 001 &
 
 Please use kill -2 to kill the process in order to get a full log
 ```
