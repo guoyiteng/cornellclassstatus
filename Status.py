@@ -6,6 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import sys
+import json
 
 def login(browser, username, password):
     url = "https://studentcenter.cornell.edu/"
@@ -75,12 +76,14 @@ def enroll(browser):
 
 def main():
     browser = webdriver.PhantomJS()
-    login(browser, 'username', 'password')
+    with open("user.json") as f:
+        data = json.load(f)
+    login(browser, data['username'], data['password'])
     print("Successfully Login.")
-    if len(sys.argv) == 2:
-        searchCourse(browser, "MATH", "4710", gap = int(sys.argv[1]))
+    if len(sys.argv) == 4:
+        searchCourse(browser, sys.argv[1], sys.argv[2], gap = int(sys.argv[3]))
     else:
-        searchCourse(browser, "MATH", "4710")
+        searchCourse(browser, sys.argv[1], sys.argv[2])
     enroll(browser)
     print("Finish enrolling")
 
