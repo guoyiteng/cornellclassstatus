@@ -8,6 +8,8 @@ A python script to check the availability of class in Cornell from [Class Roster
 python3
 requests
 bs4
+selenium
+phantomjs
 ```
 
 Recommend using linux server
@@ -37,6 +39,16 @@ python Main.py CS 2110 DIS 202 config.json
 
 Using nohup command on linux server
 nohup python -u Main.py CS 3410 LEC 001 &
-
-Please use kill -2 to kill the process in order to get a full log
 ```
+# Enrollment Course
+
+## Usage
+
+- edit the user.json file
+
+- Run the script
+
+python Status.py MATH 4370
+
+Using nohup command on linux server
+nohup python -u Status.py MATH 4370 &
